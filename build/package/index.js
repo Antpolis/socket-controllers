@@ -52,7 +52,7 @@ function createExecutor(io, options) {
     executor.classToPlainTransformOptions = options.classToPlainTransformOptions;
     executor.plainToClassTransformOptions = options.plainToClassTransformOptions;
     // run socket controller register and other operations
-    executor.execute();
+    executor.execute(controllerClasses, middlewareClasses);
 }
 // -------------------------------------------------------------------------
 // Global Metadata Storage
